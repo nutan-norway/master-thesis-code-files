@@ -58,10 +58,10 @@ The dataset integrates **11 data sources** covering the period 2015–2025. All 
 | 2 | `hydro_reserves_clean.csv` | NVE | Weekly reservoir storage levels (NO national + zones) |
 | 3 | `water_inflow.csv` | NVE | Weekly water inflow + snowpack, 1958–2026 |
 | 4 | `nordic_system_forwards_clean.csv` | Nordic Exchange | Daily Nordic system forward prices (M1, Y1) |
-| 5 | `nordic_epads_clean.csv` | Nordic Exchange | Daily area price differentials for all zones |
-| 6 | `TTF_Daily_.csv` | PEGAS/ICE | TTF natural gas front-month price (EUR/MWh) |
-| 7 | `EEX_EUA_Daily_Continuous_2012_2025.csv` | EEX | EU carbon allowance auction price (EUR/tonne CO₂) |
-| 8 | `brent_front_month_m1.csv` | ICE | Brent crude oil front-month price (USD/barrel) |
+| 5 | `nordic_epads_clean.csv` | Montel | Daily area price differentials for all zones |
+| 6 | `TTF_Daily_.csv` | Montel | TTF natural gas front-month price (EUR/MWh) |
+| 7 | `EEX_EUA_Daily_Continuous_2012_2025.csv` | Montel | EU carbon allowance auction price (EUR/tonne CO₂) |
+| 8 | `brent_front_month_m1.csv` | Montel | Brent crude oil front-month price (USD/barrel) |
 | 9 | `norway_weather_datasetunchanged.csv` | MET Norway | Daily temperature, wind speed, precipitation — all zones |
 | 10 | `load_NO1_raw.csv` … `load_NO5_raw.csv` | ENTSO-E | Hourly actual electricity consumption — per zone |
 | 11 | `eur_nok_clean.csv` | Montel | EUR/NOK daily exchange rate |
