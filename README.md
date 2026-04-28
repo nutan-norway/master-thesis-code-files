@@ -54,7 +54,7 @@ The dataset integrates **11 data sources** covering the period 2015–2025. All 
 
 | # | File | Source | Description |
 |---|---|---|---|
-| 1 | `norway_day_ahead_prices_long.csv` | NordPool | Hourly day-ahead spot prices — all 5 zones (NO1–NO5) |
+| 1 | `norway_day_ahead_prices_long.csv` | Montel | Hourly day-ahead spot prices — all 5 zones (NO1–NO5) |
 | 2 | `hydro_reserves_clean.csv` | NVE | Weekly reservoir storage levels (NO national + zones) |
 | 3 | `water_inflow.csv` | NVE | Weekly water inflow + snowpack, 1958–2026 |
 | 4 | `nordic_system_forwards_clean.csv` | Nordic Exchange | Daily Nordic system forward prices (M1, Y1) |
@@ -64,7 +64,7 @@ The dataset integrates **11 data sources** covering the period 2015–2025. All 
 | 8 | `brent_front_month_m1.csv` | ICE | Brent crude oil front-month price (USD/barrel) |
 | 9 | `norway_weather_datasetunchanged.csv` | MET Norway | Daily temperature, wind speed, precipitation — all zones |
 | 10 | `load_NO1_raw.csv` … `load_NO5_raw.csv` | ENTSO-E | Hourly actual electricity consumption — per zone |
-| 11 | `eur_nok_clean.csv` | Norges Bank | EUR/NOK daily exchange rate |
+| 11 | `eur_nok_clean.csv` | Montel | EUR/NOK daily exchange rate |
 
 > **Note:** Raw data files are not included in this repository due to data licensing. Contact the author or the respective sources to obtain the data.
 
