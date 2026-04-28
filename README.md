@@ -57,7 +57,7 @@ The dataset integrates **11 data sources** covering the period 2015–2025. All 
 | 1 | `norway_day_ahead_prices_long.csv` | Montel | Hourly day-ahead spot prices — all 5 zones (NO1–NO5) |
 | 2 | `hydro_reserves_clean.csv` | NVE | Weekly reservoir storage levels (NO national + zones) |
 | 3 | `water_inflow.csv` | NVE | Weekly water inflow + snowpack, 1958–2026 |
-| 4 | `nordic_system_forwards_clean.csv` | Nordic Exchange | Daily Nordic system forward prices (M1, Y1) |
+| 4 | `nordic_system_forwards_clean.csv` | Montel | Daily Nordic system forward prices (M1, Y1) |
 | 5 | `nordic_epads_clean.csv` | Montel | Daily area price differentials for all zones |
 | 6 | `TTF_Daily_.csv` | Montel | TTF natural gas front-month price (EUR/MWh) |
 | 7 | `EEX_EUA_Daily_Continuous_2012_2025.csv` | Montel | EU carbon allowance auction price (EUR/tonne CO₂) |
