@@ -410,7 +410,6 @@ class SARIMAModel:
 
 # ── Fit on training data and show diagnostics ────────────────────────────
 print("Fitting SARIMA(2,1,1)(1,0,1)[7] on training data...")
-print("(This takes ~20-30 seconds)")
 t0 = time.time()
 m_sarima = SARIMAModel().fit(train_demo)
 print(f"Fitted in {time.time()-t0:.1f}s")
@@ -591,7 +590,6 @@ for _, row in ct_unc.iterrows():
 if n_violations == 0:
     print("  None in top-12 features (may exist in lower-ranked features)")
 print()
-print("The constrained model enforces all bounds by construction.")
 
 
 # Rolling Window Evaluation Engine
@@ -1089,8 +1087,6 @@ if interest_feats:
     ax.set_xticks(x)
     ax.set_xticklabels(interest_feats, rotation=45, ha='right', fontsize=9)
     ax.axhline(0, color='k', lw=0.8)
-    #ax.set_title('Shared Feature Coefficients Across Tiers\n'
-    #             '(physical constraints ensure correct signs)')
     ax.set_ylabel('Original-scale coefficient')
     ax.legend(fontsize=9)
 
@@ -1215,7 +1211,7 @@ pivot_sig = dm_df.pivot_table(index='model', columns='horizon',
 print("\nSignificant (True = p < 0.05):")
 print(pivot_sig.to_string())
 
-# ── Figure BM5: DM p-value heatmap ────────────────────────────────────────
+# ── Figure: DM p-value heatmap ────────────────────────────────────────
 fig, ax = plt.subplots(figsize=(13, 5))
 models_dm  = dm_df['model'].unique()
 horizons_dm= sorted(dm_df['horizon'].unique())
@@ -1333,8 +1329,6 @@ class ConstrainedEN:
         Xn = X[self.feature_cols_].fillna(0).values.astype(float)
         return self.scaler.transform(Xn) @ self.coef_ + self.intercept_
 
-
-# ── Choose a representative forecast date ────────────────────────────────
 # Use a mid-2023 date: model is fully post-crisis, gas/hydro at normal levels
 FC_DATE   = pd.Timestamp('2023-06-01')
 WIN_DAYS  = 365 * 3

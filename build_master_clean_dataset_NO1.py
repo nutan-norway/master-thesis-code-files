@@ -58,7 +58,7 @@ def assert_clean(df, name):
     assert nulls == 0, f"{name}: {nulls} null values found!"
     assert infs  == 0, f"{name}: {infs} inf values found!"
     print(f"  {name:<40}: shape={df.shape}  "
-          f"date={df.iloc[:,0].min().date()} → {df.iloc[:,0].max().date()}  ✅")
+          f"date={df.iloc[:,0].min().date()} → {df.iloc[:,0].max().date()}")
 
 
 # ============================================================
